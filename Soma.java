@@ -6,6 +6,6 @@ public class Soma {
         System.out.println(x+y);
         long z = 40;
         x = (int) z;
-        System.out.println(x);
+        System.out.println(x );
     }
 }
