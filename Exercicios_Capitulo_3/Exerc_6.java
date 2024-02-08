@@ -1,3 +1,4 @@
+package Exercicios_Capitulo_3;
 public class Exerc_6 {
     public static void main (String args []){
         int fibonacci_1 = 0;

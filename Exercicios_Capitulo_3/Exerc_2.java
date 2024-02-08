@@ -1,3 +1,4 @@
+package Exercicios_Capitulo_3;
 public class Exerc_2 {
     public static void main (String args [] )
     {
