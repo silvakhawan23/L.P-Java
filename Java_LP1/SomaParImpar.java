@@ -1,4 +1,4 @@
-package Java_LP1;
+
 public class SomaParImpar {
     public static void main (String args []){
         //int sP = 0;

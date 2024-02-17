@@ -7,7 +7,8 @@ public class TestaBanco {
         Banco inter = new Banco();
         inter.numero = 1001;
         inter.agencia = "coxipo";
-        inter.dataDeAbertura = "15/02/2024";
+        inter.dataDeAbertura = new Data();
+        inter.dataDeAbertura.definirData(17, 02, 2024);
         inter.nomeTitular = "rafael";
         inter.saldo = 3500;
         inter.saque(200);
@@ -31,9 +32,10 @@ public class TestaBanco {
         c2 = c3;
         if	(c3	==	c2)	{
             System.out.println("iguais");
-}	else	{
+        }	else	{
             System.out.println("diferentes");								
-}
+            }
+
 
     }
 }

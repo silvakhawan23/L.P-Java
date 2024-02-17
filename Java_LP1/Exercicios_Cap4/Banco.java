@@ -5,7 +5,9 @@ public class Banco {
     int numero;
     String agencia;
     double saldo;
-    String dataDeAbertura;
+    Data dataDeAbertura;
+    //Banco.saldo	=	1234; nao faz sentido (exercicio 8)
+    //Banco.calculaRendimento(); nao faz sentido (exercicio 8)
 
     public void saque (double v)
     {
@@ -23,8 +25,10 @@ public class Banco {
         return rend;
     }
      public String recuperaDadosParaImpressao(){
-        String data;
-        data = "Titular: "+ nomeTitular +"\nNumero: "+numero+"\nAgencia: "+agencia+"\nSaldo: "+saldo+"$\nData de Abertura da Conta: "+dataDeAbertura;
-        return data;
+        String dados;
+        dados = "Titular: "+ nomeTitular +"\nNumero: "+numero+"\nAgencia: "+agencia+"\nSaldo: "+saldo+"$\nData de Abertura da Conta: ";
+       // dados += dataDeAbertura.dia+"/"+dataDeAbertura.mes+"/"+dataDeAbertura.ano;
+       dados += dataDeAbertura.formatandoData(); 
+       return dados;
      }
  }
