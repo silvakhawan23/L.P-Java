@@ -22,4 +22,9 @@ public class Banco {
         rend = saldo *0.1;
         return rend;
     }
+     public String recuperaDadosParaImpressao(){
+        String data;
+        data = "Titular: "+ nomeTitular +"\nNumero: "+numero+"\nAgencia: "+agencia+"\nSaldo: "+saldo+"$\nData de Abertura da Conta: "+dataDeAbertura;
+        return data;
+     }
  }
