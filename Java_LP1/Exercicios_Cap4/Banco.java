@@ -6,18 +6,16 @@ public class Banco {
     String agencia;
     double saldo;
     Data dataDeAbertura;
-    //Banco.saldo	=	1234; nao faz sentido (exercicio 8)
-    //Banco.calculaRendimento(); nao faz sentido (exercicio 8)
-
+   
     public void saque (double v)
     {
         saldo = saldo - v;
-        System.err.println("Valor sacado: " + v + "$ \nValor atual na conta: " + saldo+"$" ); 
+        System.err.println("Valor sacado:R$ " + v  ); 
     }
     public void depositar ( double v)
     {
         saldo = saldo +v;
-        System.err.println("Valor depositado: " + v + "$ \nValor atual na conta:" + saldo+"$" ); 
+        System.err.println("Valor depositado:R$ " + v + "\nValor atual na conta:R$" + saldo ); 
     }
     public double calculaRendimento ( ){
         double rend;
@@ -27,7 +25,6 @@ public class Banco {
      public String recuperaDadosParaImpressao(){
         String dados;
         dados = "Titular: "+ nomeTitular +"\nNumero: "+numero+"\nAgencia: "+agencia+"\nSaldo: "+saldo+"$\nData de Abertura da Conta: ";
-       // dados += dataDeAbertura.dia+"/"+dataDeAbertura.mes+"/"+dataDeAbertura.ano;
        dados += dataDeAbertura.formatandoData(); 
        return dados;
      }
